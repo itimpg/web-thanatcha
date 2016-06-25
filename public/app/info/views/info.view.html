@@ -1,0 +1,11 @@
+<section ng-controller="InfoController">
+    <div ng-repeat="info in cvInfo">
+        <h1>{{info.header}}</h1>
+        <div ng-repeat="work in info.works">
+            <h1>{{work.year}}</h1>
+            <ul ng-repeat="item in work.items">
+                <li><span>{{item}}<span></li>    
+            </ul>
+        <div>
+    </div>
+</section>
