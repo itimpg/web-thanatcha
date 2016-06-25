@@ -1,8 +1,18 @@
 <section ng-controller="InfoController">
+
+    <div>
+        <h1>Thanatcha Chairin</h1>
+        <p><span class="glyphicon glyphicon-baby-formula"></span> 18 Feb 1990</p>
+        <p><span class="glyphicon glyphicon-home"></span> 176 M.6 Umong, Meung, Lamphun 51150</p>
+        <p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:thanatcha.chairin@gmail.com"> thanatcha.chairin@gmail.com</a></p>
+        <p><span class="glyphicon glyphicon-education"></span> Bachelor Sculpture, Faculty of Fine arts Chiang Mai university</p>
+        <p><span class="glyphicon glyphicon-education"></span> Studying master degree , Slipakorn university Bangkok Thailand</p>
+    </div>
+
     <div ng-repeat="info in cvInfo">
-        <h1>{{info.header}}</h1>
+        <h3>{{info.header}}</h3>
         <div ng-repeat="work in info.works">
-            <h1>{{work.year}}</h1>
+            <h3>{{work.year}}</h3>
             <ul ng-repeat="item in work.items">
                 <li><span>{{item}}<span></li>    
             </ul>

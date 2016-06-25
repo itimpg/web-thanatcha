@@ -54,7 +54,17 @@ angular.module('work').factory('WorkService', [
                 ]
             }
         ];
-        
-        return works;
+
+        return {
+            getWorks: function () {
+                return works;
+            },
+            getWorkDetail: function (workId) {
+                return {
+                    year: workId,
+                    text: 'test'
+                };
+            }
+        }
     }
 ]);

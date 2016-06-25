@@ -1,0 +1,12 @@
+<section ng-controller="WorkController">
+    WORKS
+
+    <div ng-repeat="work in works">
+
+        <div>
+            <a ng-href="#!/works/{{work.year}}" ng-bind="{{work.year}}"></a>
+        </div>
+
+    </div>
+
+</section>

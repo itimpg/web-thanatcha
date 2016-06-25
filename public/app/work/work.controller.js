@@ -1,5 +1,10 @@
-angular.module('work').controller('WorkController', ['$scope', 'WorkService',
-    function ($scope, WorkService) {
-        $scope.sometext = WorkService;
+angular.module('work').controller('WorkController', ['$scope', '$routeParams', 'WorkService',
+    function ($scope, $routeParams, WorkService) {
+
+        if ($routeParams.workId) {
+            $scope.workItem = WorkService.getWorkDetail($routeParams.workId);
+        } else {
+            $scope.works = WorkService.getWorks();
+        }
     }
 ]);
