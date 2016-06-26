@@ -4,7 +4,7 @@ angular.module('work').config(['$routeProvider',
             .when('/works', {
                 templateUrl: 'app/work/views/works.view.html'
             })
-            .when('/works/:workId', {
+            .when('/works/:year/:id', {
                 templateUrl: 'app/work/views/work.view.html'
             });
     }

@@ -77,6 +77,10 @@ angular.module('info').factory('CvService', [
             '2013_03_05_opt.jpg',
         ];
 
-        return curriculums;
+        return {
+            getInfo: function () {
+                return curriculums;
+            }
+        }
     }
 ]);

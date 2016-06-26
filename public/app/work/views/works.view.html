@@ -1,10 +1,20 @@
 <section ng-controller="WorkController">
-    WORKS
 
-    <div ng-repeat="work in works">
+    <h1>Works</h1>
 
-        <div>
-            <a ng-href="#!/works/{{work.year}}" ng-bind="{{work.year}}"></a>
+    <div class="row" ng-repeat="work in works">
+        <div class="col-md-12">
+            <h3>{{work.year}}</h3>
+        </div>
+
+        <div class="col-md-4" ng-repeat="project in work.projects">
+            <div>
+                <a ng-href="#!/works/{{work.year}}/{{project.id}}">
+                    <img ng-src="{{project.imageTitle}}" />
+                    <span>{{project.name}}</span>
+                    <span>{{project.desc}}</span>
+                </a>
+            </div>
         </div>
 
     </div>

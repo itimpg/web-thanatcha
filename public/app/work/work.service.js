@@ -1,6 +1,6 @@
 angular.module('work').factory('WorkService', [
     function () {
-        var works = [
+        var images = [
             {
                 year: 2012,
                 pictures: [
@@ -55,15 +55,68 @@ angular.module('work').factory('WorkService', [
             }
         ];
 
+        var works = [
+            {
+                year: 2012,
+                projects: [
+                    {
+                        id: 1,
+                        imageTitle: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
+                        name: 'Test name',
+                        desc: 'Test desc',
+                        images: [
+                            "https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png",
+                            "https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png",
+                            "https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png",
+                            "https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png",
+                            "https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png",
+                        ]
+                    }, {
+                        id: 1,
+                        imageTitle: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
+                        name: 'Test name',
+                        desc: 'Test desc'
+                    }, {
+                        id: 1,
+                        imageTitle: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
+                        name: 'Test name',
+                        desc: 'Test desc'
+                    }, {
+                        id: 1,
+                        imageTitle: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
+                        name: 'Test name',
+                        desc: 'Test desc'
+                    }, {
+                        id: 1,
+                        imageTitle: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
+                        name: 'Test name',
+                        desc: 'Test desc'
+                    }, {
+                        id: 1,
+                        imageTitle: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
+                        name: 'Test name',
+                        desc: 'Test desc'
+                    }
+                ]
+            },
+        ];
+
+
         return {
             getWorks: function () {
                 return works;
             },
-            getWorkDetail: function (workId) {
-                return {
-                    year: workId,
-                    text: 'test'
-                };
+            getWorkDetail: function (year, id) {
+                var itemByYear = works.filter(function (work) {
+                    return work.year == year;
+                })[0];
+
+                if (itemByYear) {
+                    return itemByYear.projects.filter(function (project) {
+                        return project.id == id;
+                    })[0];
+                }
+                return null;
             }
         }
     }

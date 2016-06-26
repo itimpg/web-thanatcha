@@ -14,7 +14,6 @@
     <style>
         body {
             padding-top: 70px;
-            padding-bottom: 70px;
             /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
         }
     </style>
@@ -40,7 +39,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#!/">Thanatcha Chairin</a>
+                <span class="navbar-brand">Thanatcha Chairin</span>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-navbar-collapse">
@@ -66,7 +65,7 @@
         <section ng-view></section>
 
     </div>
-    
+
     <footer class="footer">
         <div class="container">
             <span class="footer-content">Copyright © Thanatcha-Chairin 2016</span>
@@ -93,6 +92,12 @@
     <script src="app/work/work.controller.js"></script>
 
     <script src="app/application.js"></script>
+    <script>    
+        $(".navbar-nav li a").click(function(event) {
+            if (!$(this).parent().hasClass('dropdown'))
+                $(".navbar-collapse").collapse('hide');
+        });
+    </script>
 </body>
 
 </html>
