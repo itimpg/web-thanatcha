@@ -1,5 +1,17 @@
 angular.module('work').factory('WorkService', [
     function () {
+
+        var slides2 = [
+            {
+                src: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
+                desc: "test 1",
+            },
+            {
+                src: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
+                desc: "test 2",
+            }
+        ]
+
         var images = [
             {
                 year: 2012,
@@ -64,13 +76,7 @@ angular.module('work').factory('WorkService', [
                         imageTitle: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
                         name: 'Test name',
                         desc: 'Test desc',
-                        images: [
-                            "https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png",
-                            "https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png",
-                            "https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png",
-                            "https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png",
-                            "https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png",
-                        ]
+                        images: slides2
                     }, {
                         id: 1,
                         imageTitle: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
