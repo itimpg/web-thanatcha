@@ -6,17 +6,17 @@
         <div class="col-md-12">
             <h3>{{work.year}}</h3>
         </div>
-
         <div class="col-md-4" ng-repeat="project in work.projects">
-            <div>
+            <div class="img-gallery">
                 <a ng-href="#!/works/{{work.year}}/{{project.id}}">
-                    <img ng-src="{{project.imageTitle}}" />
-                    <span>{{project.name}}</span>
-                    <span>{{project.desc}}</span>
+                    <img class="img-responsive img-rounded" ng-src="{{baseUrl}}img/{{project.imageTitle}}" />
+                    <div class="row text-center img-text">
+                        <h3>{{project.name}}</h3>
+                        <span>{{project.desc}}</span>
+                    </div>
                 </a>
             </div>
         </div>
-
     </div>
 
 </section>

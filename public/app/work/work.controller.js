@@ -1,6 +1,9 @@
 angular.module('work').controller('WorkController', ['$scope', '$routeParams', 'WorkService',
     function ($scope, $routeParams, WorkService) {
 
+        var getUrl = window.location;
+        $scope.baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
+
         if ($routeParams.year && $routeParams.id) {
             $scope.workItem = WorkService.getWorkDetail($routeParams.year, $routeParams.id);
             $scope.slides = [];

@@ -1,17 +1,6 @@
 angular.module('work').factory('WorkService', [
     function () {
 
-        var slides2 = [
-            {
-                src: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
-                desc: "test 1",
-            },
-            {
-                src: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
-                desc: "test 2",
-            }
-        ]
-
         var images = [
             {
                 year: 2012,
@@ -67,42 +56,173 @@ angular.module('work').factory('WorkService', [
             }
         ];
 
+        var theDiminishFolkways = {
+            id: 201601,
+            imageTitle: 'The Diminish Folkways/The diminish folkways (1).jpg',
+            name: 'The Diminish Folkways',
+            desc: '',
+            images:
+            [
+                {
+                    src: 'The Diminish Folkways/The diminish folkways (1).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'The Diminish Folkways/The diminish folkways (2).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'The Diminish Folkways/The diminish folkways (3).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'The Diminish Folkways/The diminish folkways (4).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'The Diminish Folkways/The diminish folkways (5).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'The Diminish Folkways/The diminish folkways (6).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'The Diminish Folkways/The diminish folkways (7).jpg',
+                    desc: "",
+                }
+            ]
+        };
+
+        var theDiaryOfCraftsManI = {
+            id: 201602,
+            imageTitle: 'The Diary of Craftsman I/The diary of craftmans I (3).jpg',
+            name: 'The Diary of Craftsman I',
+            desc: '',
+            images:
+            [
+                {
+                    src: 'The Diary of Craftsman I/The diary of craftmans I (1).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'The Diary of Craftsman I/The diary of craftmans I (2).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'The Diary of Craftsman I/The diary of craftmans I (3).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'The Diary of Craftsman I/The diary of craftmans I (4).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'The Diary of Craftsman I/The diary of craftmans I (5).jpg',
+                    desc: "",
+                },
+            ]
+        };
+
+        var theDiaryOfCraftsManII = {
+            id: 201603,
+            imageTitle: 'The Diary of Craftsman II/The diary of craftmans II (1).jpg',
+            name: 'The Diary of Craftsman II',
+            desc: '',
+            images:
+            [
+                {
+                    src: 'The Diary of Craftsman II/The diary of craftmans II (1).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'The Diary of Craftsman II/The diary of craftmans II (2).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'The Diary of Craftsman II/The diary of craftmans II (3).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'The Diary of Craftsman II/The diary of craftmans II (4).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'The Diary of Craftsman II/The diary of craftmans II (5).jpg',
+                    desc: "",
+                },
+            ]
+        };
+
+        var theSomething1 = {
+            id: 201604,
+            imageTitle: 'untitle1/I (6).jpg',
+            name: 'The Untitle I',
+            desc: '',
+            images:
+            [
+                {
+                    src: 'untitle1/I (1).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'untitle1/I (2).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'untitle1/I (3).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'untitle1/I (4).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'untitle1/I (5).jpg',
+                    desc: "",
+                },
+                {
+                    src: 'untitle1/I (6).jpg',
+                    desc: "",
+                },
+            ]
+        };
+
+        var theSomething2 = {
+            id: 201605,
+            imageTitle: 'untitle2/4.jpg',
+            name: 'The Untitle II',
+            desc: '',
+            images:
+            [
+                {
+                    src: 'untitle2/1.jpg',
+                    desc: "",
+                },
+                {
+                    src: 'untitle2/2.jpg',
+                    desc: "",
+                },
+                {
+                    src: 'untitle2/3.jpg',
+                    desc: "",
+                },
+                {
+                    src: 'untitle2/4.jpg',
+                }
+            ]
+        };
+
         var works = [
             {
-                year: 2012,
-                projects: [
-                    {
-                        id: 1,
-                        imageTitle: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
-                        name: 'Test name',
-                        desc: 'Test desc',
-                        images: slides2
-                    }, {
-                        id: 1,
-                        imageTitle: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
-                        name: 'Test name',
-                        desc: 'Test desc'
-                    }, {
-                        id: 1,
-                        imageTitle: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
-                        name: 'Test name',
-                        desc: 'Test desc'
-                    }, {
-                        id: 1,
-                        imageTitle: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
-                        name: 'Test name',
-                        desc: 'Test desc'
-                    }, {
-                        id: 1,
-                        imageTitle: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
-                        name: 'Test name',
-                        desc: 'Test desc'
-                    }, {
-                        id: 1,
-                        imageTitle: 'https://developer.chrome.com/extensions/examples/api/idle/idle_simple/sample-128.png',
-                        name: 'Test name',
-                        desc: 'Test desc'
-                    }
+                year: 2016,
+                projects:
+                [
+                    theDiminishFolkways,
+                    theDiaryOfCraftsManI,
+                    theDiaryOfCraftsManII,
+                    theSomething1,
+                    theSomething2
                 ]
             },
         ];

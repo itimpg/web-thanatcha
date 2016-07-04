@@ -1,0 +1,12 @@
+.img-gallery{
+    margin: 10px 0px;
+}
+
+.img-text{
+    position: absolute;
+    bottom: 18px;
+    width: 100%;
+    color: #fff;
+    background: #000;
+    opacity: .6;
+}
