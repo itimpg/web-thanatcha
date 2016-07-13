@@ -1,11 +1,13 @@
 <section ng-controller="WorkController">
-    <div>
+    <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 work-detail-content">
         <uib-carousel active="0" interval="4000">
             <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
                 <img ng-src="{{baseUrl}}img/{{slide.image}}" style="margin:auto;">
                 <div class="carousel-caption">
-                    <h1>{{workItem.name}}</h1>
-                    <p>{{slide.text}}</p>
+                    <!--
+                        <h1>{{workItem.name}}</h1>
+                        <p>{{slide.text}}</p>
+                    -->
                 </div>
             </uib-slide>
         </uib-carousel>
