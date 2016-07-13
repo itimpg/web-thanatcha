@@ -1,21 +1,24 @@
 <section ng-controller="InfoController">
 
-    <div>
-        <h1>Thanatcha Chairin</h1>
-        <p><span class="glyphicon glyphicon-baby-formula"></span> 18 Feb 1990</p>
-        <p><span class="glyphicon glyphicon-home"></span> 176 M.6 Umong, Meung, Lamphun 51150</p>
-        <p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:thanatcha.chairin@gmail.com"> thanatcha.chairin@gmail.com</a></p>
-        <p><span class="glyphicon glyphicon-education"></span> Bachelor Sculpture, Faculty of Fine arts Chiang Mai university</p>
-        <p><span class="glyphicon glyphicon-education"></span> Studying master degree , Slipakorn university Bangkok Thailand</p>
-    </div>
+    <div class="col-md-3 col-sm-3"></div>
 
-    <div ng-repeat="info in cvInfo">
-        <h3>{{info.header}}</h3>
-        <div ng-repeat="work in info.works">
-            <h4>{{work.year}}</h4>
-            <ul ng-repeat="item in work.items">
-                <li><span>{{item}}<span></li>    
-            </ul>
+    <div class="col-md-6 col-sm-6 info-content">
         <div>
+            <span>Born: 18 Feb 1990</span><br/>
+            <span>Address: 176 M.6 Umong, Meung, Lamphun 51150</span><br/>
+            <span>Email: <a href="mailto:thanatcha.chairin@gmail.com"> thanatcha.chairin@gmail.com</a></span><br/>
+            <span>Bachelor Sculpture, Faculty of Fine arts Chiang Mai university</span><br/>
+            <span>Studying master degree , Slipakorn university Bangkok Thailand</span><br/><br/>
+        </div>
+
+        <div ng-repeat="info in cvInfo">
+            <h5>{{info.header}}</h5>
+            <div ng-repeat="work in info.works">
+                <h5>{{work.year}}</h5>
+                <ul ng-repeat="item in work.items">
+                    <li><span>{{item}}<span></li>    
+                </ul>
+            <div>
+        </div>
     </div>
 </section>
