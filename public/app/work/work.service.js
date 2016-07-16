@@ -65,7 +65,7 @@ angular.module('work').factory('WorkService', [
                     desc: "",
                 },
                 {
-                    src: 'The diary of craftsman I/The diary of craftsman I (5).jpg',
+                    src: 'The Diary of Craftsman I/The diary of craftsman I (5).jpg',
                     desc: "",
                 },
             ]
