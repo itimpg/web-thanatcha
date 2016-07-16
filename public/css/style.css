@@ -69,24 +69,24 @@
 }
 
 .home-content{
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .work-content{
-    padding-top: 40px;
+    margin-top: 40px;
 }
 
 .writing-content{
     color: #9d9d9d;
-    padding-top: 60px;
+    margin-top: 60px;
 }
 
 .info-content{
-    padding-top: 20px;
+    margin-top: 20px;
 }
 
 .work-detail-content{
-    padding-top: 40px;
+    margin-top: 20px;
 }
 
 .info-content ul{
