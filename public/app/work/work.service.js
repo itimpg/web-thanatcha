@@ -159,6 +159,29 @@ angular.module('work').factory('WorkService', [
             ]
         };
 
+        var theUntitle3 = {
+            id: 201606,
+            imageTitle: 'untitle3/Untitled-1.jpg',
+            name: 'The Untitle III',
+            desc: '',
+            dimension: '',
+            images:
+            [
+                {
+                    src: 'untitle3/Untitled-1.jpg',
+                    desc: "",
+                },
+                {
+                    src: 'untitle3/Untitled-3.jpg',
+                    desc: "",
+                },
+                {
+                    src: 'untitle3/Untitled-3.jpg',
+                    desc: "",
+                }
+            ]
+        }
+
         var howToUseTheseTools = {
             id: 201501,
             imageTitle: 'How to use these tools/How to use these tools 1.jpg',
@@ -200,6 +223,7 @@ angular.module('work').factory('WorkService', [
                     theDiaryOfCraftsManII,
                     theDiaryOfCraftsManI,
                     theUntitle2,
+                    theUntitle3,
                     theCheckMate
                 ]
             },
