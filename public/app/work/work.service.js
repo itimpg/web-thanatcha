@@ -60,7 +60,8 @@ angular.module('work').factory('WorkService', [
             id: 201601,
             imageTitle: 'The Diminish Folkways/The diminish folkways (1).jpg',
             name: 'The Diminish Folkways',
-            desc: '',
+            desc: 'clay, water, video',
+            dimension: 'Dimensins variable',
             images:
             [
                 {
@@ -98,7 +99,8 @@ angular.module('work').factory('WorkService', [
             id: 201602,
             imageTitle: 'The Diary of Craftsman I/The diary of craftmans I (3).jpg',
             name: 'The Diary of Craftsman I',
-            desc: '',
+            desc: 'craving on tools and table, photo',
+            dimension: '80 x 120 x 200 cm',
             images:
             [
                 {
@@ -128,7 +130,8 @@ angular.module('work').factory('WorkService', [
             id: 201603,
             imageTitle: 'The Diary of Craftsman II/The diary of craftmans II (1).jpg',
             name: 'The Diary of Craftsman II',
-            desc: '',
+            desc: 'craving tools and wood',
+            dimension: '45, 135, 150 cm',
             images:
             [
                 {
@@ -157,8 +160,9 @@ angular.module('work').factory('WorkService', [
         var theSomething1 = {
             id: 201604,
             imageTitle: 'untitle1/I (6).jpg',
-            name: 'The Untitle I',
-            desc: '',
+            name: 'Check - mate',
+            desc: 'Rubbing on paper, Drawing, wood',
+            dimension: 'Dimensins variable',
             images:
             [
                 {
@@ -192,7 +196,8 @@ angular.module('work').factory('WorkService', [
             id: 201605,
             imageTitle: 'untitle2/4.jpg',
             name: 'The Untitle II',
-            desc: '',
+            desc: 'craving on tools',
+            dimension: '3 x 3 x 110 cm',
             images:
             [
                 {
@@ -219,10 +224,10 @@ angular.module('work').factory('WorkService', [
                 projects:
                 [
                     theDiminishFolkways,
-                    theDiaryOfCraftsManI,
                     theDiaryOfCraftsManII,
-                    theSomething1,
-                    theSomething2
+                    theDiaryOfCraftsManI,
+                    theSomething2,
+                    theSomething1
                 ]
             },
         ];
