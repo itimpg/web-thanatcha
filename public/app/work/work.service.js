@@ -7,6 +7,7 @@ angular.module('work').factory('WorkService', [
             name: 'The Diminish Folkways',
             desc: 'clay, water, video',
             dimension: 'dimensions variable',
+            youtube: 'https://www.youtube.com/embed/Zwlpq2wkSpY',
             images:
             [
                 {
@@ -133,10 +134,10 @@ angular.module('work').factory('WorkService', [
             ]
         };
 
-        var theUntitle2 = {
+        var theCommand = {
             id: 201605,
             imageTitle: 'untitle2/4.jpg',
-            name: 'The Untitle II',
+            name: 'Command',
             desc: 'craving on tools',
             dimension: '3 x 3 x 110 cm',
             images:
@@ -162,9 +163,9 @@ angular.module('work').factory('WorkService', [
         var theUntitle3 = {
             id: 201606,
             imageTitle: 'untitle3/Untitled-1.jpg',
-            name: 'The Untitle III',
-            desc: '',
-            dimension: '',
+            name: 'lucky shirt',
+            desc: "Homeless people's shirt , chair",
+            dimension: '55 x 63 x 75 cm',
             images:
             [
                 {
@@ -186,8 +187,8 @@ angular.module('work').factory('WorkService', [
             id: 201501,
             imageTitle: 'How to use these tools/How to use these tools 1.jpg',
             name: 'How to use these tools',
-            desc: '',
-            dimension: '',
+            desc: 'mixed media',
+            dimension: '110 x 80 x170 cm',
             images:
             [
                 {
@@ -222,9 +223,9 @@ angular.module('work').factory('WorkService', [
                     theDiminishFolkways,
                     theDiaryOfCraftsManII,
                     theDiaryOfCraftsManI,
-                    theUntitle2,
+                    theCommand,
+                    theCheckMate,
                     theUntitle3,
-                    theCheckMate
                 ]
             },
             {

@@ -12,7 +12,7 @@ angular.module('work').controller('WorkController', ['$scope', '$routeParams', '
                 $scope.slides.push({
                     id: i,
                     image: img.src,
-                    text: img.desc
+                    text: img.desc,
                 });
             }
         } else {
