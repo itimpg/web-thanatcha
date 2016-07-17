@@ -1,5 +1,7 @@
 angular.module('main').controller('MainController', ['$scope',
-    function () {
-
+    function ($scope) {
+        $scope.sendMessage = function (contact) {
+            $scope.isMessageSend = true;
+        }
     }
 ]);

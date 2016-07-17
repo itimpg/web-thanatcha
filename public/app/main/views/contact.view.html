@@ -1,0 +1,26 @@
+<section ng-controller="MainController">
+    <div class="col-xs-12 col-md-offset-3 col-md-5 col-sm-offset-3 col-sm-5 contact-content">
+        <div ng-hide="isMessageSend">
+            <form id="contact-form" class="form-horizontal" ng-submit="sendMessage(contact)">
+                <div class="form-group">
+                    <span>Your name:</span>
+                    <input type="text" class="form-control" id="name" ng-model="contact.name" required/>
+                </div>
+                <div class="form-group">
+                    <span>subject:</span>
+                    <input type="text" id="subject" class="form-control" ng-model="contact.subject" required/>
+                </div>
+                <div class="form-group">
+                    <span>message:</span>
+                    <textarea id="message" class="form-control" ng-model="contact.message" required/>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-default" value="Send message" />
+                </div>
+            </form>
+        </div>
+        <div ng-show="isMessageSend">
+            <p>Your message have been send.</p>
+        </div>
+    </div>
+</section>
