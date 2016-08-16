@@ -1,12 +1,5 @@
-var express = require('express');
-var app = express();
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
-app.set('view engine', 'html');
-app.set('views', 'public');
-app.use(express.static('public'));
-
-app.get('/', function (req, res) {
-    res.render('index');
-});
-
+var app = require('./config/express')();
 app.listen(3000);
+module.exports = app;
