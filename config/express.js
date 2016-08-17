@@ -1,4 +1,5 @@
-var express = require('express');
+var config = require('./config'),
+    express = require('express');
 
 module.exports = function () {
     var app = express();
@@ -8,5 +9,8 @@ module.exports = function () {
     app.use(express.static('public'));
 
     require('../app/routes/index.server.routes')(app);
+    require('../app/routes/info.server.routes')(app);
+    require('../app/routes/work.server.routes')(app);
+
     return app;
 }
